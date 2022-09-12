@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="test1.css"?>
+
+<catalog>
+
+<cd>
+<title>Bayahibe</title>
+<place>Dominican Republic</place>
+<airport>(La Romana Airport)</airport>
+<review>Bayahibe offers local charm with more secluded beaches and some of the country’s best places to scuba dive. When you want to take a break from water activities, Bayahibe has ranches where tourists can go horseback riding and a jungle river tour.</review>
+</cd>
+
+<cd>
+<title>Bozeman</title>
+<place>Montana</place>
+<airport>(Bozeman Yellowstone International Airport)</airport>
+<review>Popular ski resorts are available here. Bozeman’s most iconic attraction is its Museum of the Rockies. The museum has an extensive collection of dinosaur fossils, including an entire T. rex skeleton.</review>
+</cd>
+
+<cd>
+<title>Budapest</title>
+<place>Hungary</place>
+<airport>(Ferenc Liszt International Airport)</airport>
+<review>Know as the "Little Paris of Middle Europe. The city is home to numerous World Heritage Sites, like the Banks of Danube, Buda Castle Quarter and Andrássy Avenue.</review>
+</cd>
+
+<cd>
+<title>Cairns</title>
+<place>Australia</place>
+<airport>(Cairns International Airport)</airport>
+<review>The best thing to see in Cairns is the Great Barrier Reef.</review>
+</cd>
+
+<cd>
+<title>Nara</title>
+<place>Japan</place>
+<airport>(Kansai International Airport)</airport>
+<review>Todaiji Temple, the place where the world’s largest bronze Buddha lives. While wandering between ancient cultural landmarks at Nara Park, you can feed some of the 1,400 friendly wild deer that roam freely.</review>
+</cd>
+
+<cd>
+<title>Nosy Be</title>
+<place>Madagascar</place>
+<airport>(Fascene Airport)</airport>
+<review>It has beautiful beaches with amazing seafood.</review>
+</cd>
+
+<cd>
+<title>Udaipur</title>
+<place>India</place>
+<airport>(Ahmedabad Airport)</airport>
+<review>Known as "The Venice of the East". Historic towers, palaces, temples and forts line the waterfront, and visitors can even stay at the Lake Palace, a seemingly floating island hotel.</review>
+</cd>
+
+<cd>
+<title>Queensland</title>
+<place>Australia</place>
+<airport>(Queensland International Airport)</airport>
+<review>The world’s largest sand island, mangrove-lined rivers, tropical rainforests, peat swamps, mountains, mangrove forests and sand dunes are there for exploring.</review>
+</cd>
+
+<cd>
+<title>Quebec City</title>
+<place>Canada</place>
+<airport>(Jean Lesage International Airport)</airport>
+<review>Here, you will get to dive deep into French-Canadian history while exploring museums, the Cathedral-Basilica of Notre-Dame de Quebec or the National Battlefield Park.</review>
+</cd>
+
+<cd>
+<title>Zimbabwe</title>
+<place>Africa</place>
+<airport>(Robert Gabriel Mugabe International Airport)</airport>
+<review>Enjoy all kinds of other thrilling experiences — from bungee jumping to exhilarating helicopter rides. You can also canoe the Mana Pools Trail or raft down the Zambezi River.</review>
+</cd>
+
+</catalog>

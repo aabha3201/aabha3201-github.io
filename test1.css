@@ -1,0 +1,38 @@
+catalog {
+  background-image: linear-gradient(#F55E99, #F7C0C1, #F1EDD4, #ABF9E1);
+  background-attachment: fixed;
+  width: 100%;
+}
+
+cd {
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+
+title {
+    font-size: 40px;
+    color: black;
+    font-family: "Mistral", "Lucida Handwriting", cursive;
+    display: block;
+}
+
+place {
+    display: block;
+    font-family: Times New Roman;
+    color: blue;
+    font-size: 15pt;
+}
+
+
+airport {
+    display: block;
+    color: white;
+}
+
+review {
+    display: block;
+    color: maroon;
+    margin-left: 10pt;
+}
+

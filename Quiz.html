@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.heading {
+  background-color: #FA8072;
+  margin: 20px;
+  padding:1px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="heading">
+  <h1>Les Voyageurs</h1>
+</div>
+
+
+
+
+        <center><h2 id="quiz" onmouseover="displayName()" onmouseout="hideName()">Quiz</h2></center><br>
+        <center><h3>Test your knowledge by taking this quiz</h3>
+
+
+
+
+   <label for="city"><b>1. Which long river has White and Blue tributaries?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Zambezi</option>
+      <option value="2">Nile</option>
+    </select><br> <br>
+ 
+
+   <label for="city"><b>2. Is Perth on the west or east coast of Australia?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">East</option>
+      <option value="2">West</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>3. Does Mumbai or Tokyo have a higher population?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Mumbai</option>
+      <option value="2">Tokyo</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>4. What is the world's smallest and flattest continent?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Antarctica</option>
+      <option value="2">Australia</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>5. Pakistan and Bangladesh both border which country?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">India</option>
+      <option value="2">Bhutan</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>6. Which countries name is an anagram of PURE?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Uper</option>
+      <option value="2">Peru</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>7. Which Egyptian canal links the Red Sea and the Mediterranean?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Suez</option>
+      <option value="2">Panama</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>8. Which ocean is the world's deepest?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Atlantic</option>
+      <option value="2">Pacific</option>
+    </select><br> <br>
+
+
+   <label for="city"><b>9. Zambia is a neighbour of which country which also begins with Z?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Zulu</option>
+      <option value="2">Zimbabwe</option>
+    </select><br> <br>
+
+   <label for="city"><b>10. In which country is the homeland of KwaZulu?</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">South Africa</option>
+      <option value="2">Botswana</option>
+    </select><br> <br>
+    <button class="btn btn-primary" type="Submit"; style="10%; background-color: #ac3939;">Submit</button>
+      
+    <p align="right">
+        <button onclick="showDate(1)">Today's date.</button><br><br>
+        <button onclick="showDate(2)">Time.</button>
+        <h3 id="date"></h3>
+        <h3 id="time"></h3><br>
+    </p>
+
+  <script>
+            function displayName() {
+                var name = "Test your knowledge!";
+                var x = document.getElementById("quiz");
+                x.innerHTML = name;
+                x.style.color = "red";
+            }
+            function hideName() {
+                var name = "Quiz";
+                var x = document.getElementById("quiz");
+                x.innerHTML = name;
+                x.style.color = "blue";
+            }
+            function showDate(num) {
+                var fulldate = new Date();
+                if(num == 1) {
+                    var date = fulldate.getDate() + "/" + fulldate.getMonth() + "/" + fulldate.getFullYear();
+                    document.getElementById("date").innerHTML = date;
+                }
+                else
+                    if(num == 2) {
+                        var time = fulldate.getHours() + ":" + fulldate.getMinutes();
+                        document.getElementById("time").innerHTML = time;
+                    }
+            }
+        </script>    
+
+<div class="footer">
+      
+	<div class="containers">
+		<h4>&copy All rights reserved</h4>
+		<div class="row4">
+			<div class="col10">
+				<h3>App Coming Soon</h3>
+			</div>
+			<div class="col11">
+				<br><br><br><p>“Once a year, go somewhere you have never been before.” –Dalai Lama</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

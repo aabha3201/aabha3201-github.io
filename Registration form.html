@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.heading {
+  background-color: #FA8072;
+  margin: 20px;
+  padding:1px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="heading">
+  <h1>Les Voyageurs</h1>
+</div>
+
+ 
+
+
+
+ <h1>Registration Form</h1>
+  <form action="#" id="form" method="POST" name="myForm" onsubmit="return validateForm()">
+
+    <label><b>First name:</b></label><br>
+    <input type="text" name="fname" class="name" autofocus size="25"><br>
+
+    <label><b>Last name:</b></label><br>
+    <input type="text" name="lname" class="name" autofocus size="25"> <br><br>
+
+
+    <div>
+
+      <label for="email"><b>Enter your email:</b></label><br>
+      <input type="email" class="email" placeholder="abc@gmail.com" autocomplete="on" size="25" required><br>
+      <label for="cemail"><b>Confirm your email:</b> </label><br>
+      <input type="email" class="email" placeholder="abc@gmail.com" autocomplete="on" size='25' required><br><br>
+    </div>
+
+   <label for="city"><b>Choose a City:</b></label><br>
+    <select id="city" name="mycity">
+      <option value=" ">Select</option>
+      <option value="1">Mumbai</option>
+      <option value="2">Pune</option>
+      <option value="3">Nagpur</option>
+      <option value="4">Nashik</option>
+    </select><br> <br>
+ 
+
+    <div>
+
+      <label for="pnumber"><b>Phone Number:</b> </label><br>
+      <input type="text" name="p_number" autofocus placeholder="" maxlength="10"> <br><br>
+    </div>
+    <div>
+
+      <label for="datemin"><b>Enter Birth Date:</b></label><br>
+      <input type="date" id="datemin" name="datemin" min="1979-12-31"><br><br>
+    </div>
+ 
+
+    <div>
+      <h4>Condition apply</h4>
+      <input type="checkbox" name="agree" id="agree" required checked>
+      <label for="agree"><b>Apply</b></label><br><br><br>
+    </div>
+    <div>
+
+      <input type="submit" id="submit" value="Submit now" />
+      <input type="reset" id="reset" value="Reset" />
+
+    </div>
+
+  </form>
+ 
+
+
+
+<script>
+    function validateForm() {
+
+      var fn = document.forms["myForm"]["fname"].value;
+      if (fn == "") {
+        alert("First Name should not be empty.");
+        return false;
+      }
+      var regex = /^[a-zA-Z]*$/;
+      if (!regex.test(fn)) {
+
+        alert("No Numerical values nor symbols accepted.");
+        return false;
+      }
+      var ln = document.forms["myForm"]["lname"].value;
+      if (ln == "") {
+        alert("Last Name should not be empty.");
+        return false;
+      }
+      var regex = /^[a-zA-Z]*$/;
+      if (!regex.test(ln)) {
+        
+        alert("No Numerical values nor symbols accepted.");
+        return false;
+      }
+
+      var city = document.myForm.mycity.value;
+      if (city == " ") {
+        alert("Choose City!")
+        return false;
+      }
+      var phone = document.forms["myForm"]["p_number"].value;
+      if (phone == "") {
+        alert("Please enter your phone no.");
+
+      }
+    }
+
+  </script>
+
+<div class="footer">
+      
+	<div class="containers">
+		<h4>&copy All rights reserved</h4>
+		<div class="row4">
+			<div class="col10">
+				<h3>App Coming Soon</h3>
+			</div>
+			<div class="col11">
+				<br><br><br><p>“Once a year, go somewhere you have never been before.” –Dalai Lama</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

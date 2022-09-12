@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <title>Book Online</title>
+  <style>
+    li a:hover {
+      background-color: lightgrey;
+    }
+
+    form {
+      background-color: #355C7D;
+      border-radius: 2px;
+      box-shadow: 0 1px 1px #ccc;
+      width: 800px;
+      padding: 35px 60px;
+      margin: 40px auto;
+    }
+
+    form h1 {
+      color: #18732c;
+      font-size: 64px;
+      font-family: 'Times New Roman', cursive;
+      font-weight: normal;
+      line-height: 1;
+    }
+
+    form table {
+      width: 680px;
+      list-style: none;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px 0 15px;
+    }
+
+    form table td {
+      padding: 10px;
+      background-color:#F67280;
+      color: black;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    form table td span {
+      float: right;
+    }
+
+    form table td.active {
+      background-color: #F8B195;
+    }
+
+    div.total {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      color: black;
+    }
+
+    div.total span {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align: center; margin-top:50px;">Book Now</h1>
+
+  <div ng-app ng-controller="OrderFormController">
+
+
+    <form>
+      <table>
+        <tr>
+          <td style="color: #F0FFF0;"></td>
+          <td style="color:black;"><u>PRICE</u></td>
+          <td style="color: black;"><u>QUANTITY</u></td>
+        </tr>
+        <tr ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
+          <td ng-click="toggleActive(service)" ng-class="{active:service.active}">{{service.name}}</td>
+          <td ng-click="toggleActive(service)" ng-class="{active:service.active}">Rs.{{service.price}}</td>
+          <td ng-click="toggleActive(service)" ng-class="{active:service.active}">
+            <button class="btn btn-light" ng-click="increaseItemAmount(service)">+</button>
+            {{service.quantity}}
+            <button class="btn btn-light" ng-click="decreaseItemAmount(service)">-</button>
+          </td>
+        </tr>
+      </table>
+
+      <div class="total">
+        <h4 style="display: inline; margin-left:80px; font-weight:bold; color:white;">TOTAL:</h4>
+        <h4 style="display: inline; margin-left: 145px; font-weight:bold; color:white;">Rs.{{total()}}</h4>
+      </div>
+
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="script.js"></script>
+  </div>
+  <div style="text-align:center; margin-bottom: 50px;">
+    <input type="submit" class="btn btn-dark" id="submitbtn" value="Confirm booking">
+  </div>
+</body>
+<script>
+  document.getElementById("submitbtn").onclick = function formSubmit() {
+    alert("Booking done!!");
+  };
+  document.getElementById("submitbtn").onmousedown = function formSubmit(e) {
+    e.target.style.background = "rgb(255, 184, 184)";
+    e.target.style.border = "3px solid grey";
+  };
+  document.getElementById("submitbtn").onmouse = function formSubmit(e) {
+    e.target.style.removeProperty('border');
+    e.target.style.removeProperty('background');
+  };
+</script>
+
+</html>

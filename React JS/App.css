@@ -1,0 +1,22 @@
+.checked{ 
+  text-decoration: line-through; 
+  opacity: 0.5; 
+  color: rgb(221, 191, 59); 
+} 
+.todoItem{ 
+  font-size: 20px; 
+  margin-bottom: 20px; 
+  color:rgb(14, 60, 187)
+} 
+.listBox{ 
+  background-color: rgb(207, 250, 235);
+  margin-left: 35%; 
+  margin-top: 5%; 
+  text-align: center; 
+  align-items: center; 
+  width: 30%; 
+  padding: 5%; 
+  border: 2px rgb(136, 18, 18) solid; 
+  border-radius: 5px; 
+  box-shadow: 5px 3px 5px lightgray;
+}
